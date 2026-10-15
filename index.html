@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#2c5a31">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Dino Aventura</title>
+<meta name="apple-mobile-web-app-title" content="Dino Aventura">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="cv"></canvas>
+
+<!-- Abertura EG Gamer X -->
+<div id="abertura" class="cobre on"><img src="logo.webp" alt="EG Gamer X"></div>
+
+<!-- Tela de título -->
+<div id="titulo" class="cobre">
+  <h1>Dino<span>Aventura</span></h1>
+  <button id="bJogar" class="bolao pulsa" aria-label="Jogar">▶</button>
+  <button id="bFases" class="bola" aria-label="Fases">🗺️</button>
+  <div class="rodape"><img src="logo.webp" alt="EG Gamer X"><span>um jogo<br><b>EG GAMER X</b></span></div>
+</div>
+
+<!-- Escolher a fase -->
+<div id="fases" class="cobre">
+  <div class="grade">
+    <button data-fase="acorda"><b>🥚</b><span>1</span></button>
+    <button data-fase="estrada"><b>🚙</b><span>2</span></button>
+    <button data-fase="floresta"><b>🌳</b><span>3</span></button>
+    <button data-fase="ceu"><b>☁️</b><span>4</span></button>
+    <button data-fase="lanche"><b>🍎</b><span>5</span></button>
+  </div>
+</div>
+
+<button id="bCasa" class="casa" aria-label="Início">🏠</button>
+<div id="legenda"></div>
+
+<!-- Fim da história -->
+<div id="fim" class="cobre">
+  <h1>Fim!</h1>
+  <button id="bDeNovo" class="bolao" aria-label="Jogar de novo">↻</button>
+</div>
+
+<div id="gire"><span>📱</span><span class="seta">↻</span></div>
+
+<script src="jogo.js"></script>
+</body>
+</html>

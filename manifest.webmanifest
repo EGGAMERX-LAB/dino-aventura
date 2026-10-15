@@ -1,0 +1,16 @@
+{
+  "name": "Dino Aventura",
+  "short_name": "Dino Aventura",
+  "description": "Joguinho de dinossauros com história: carrinho, esconde-esconde, voo e lanche no lago. Sem anúncios, funciona sem internet. Desenvolvido por EG Gamer X.",
+  "lang": "pt-BR",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#000000",
+  "theme_color": "#2c5a31",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
