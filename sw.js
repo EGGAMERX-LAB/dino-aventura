@@ -1,7 +1,7 @@
 /* Dino Aventura — guarda o jogo no aparelho para funcionar sem internet.
    Mude o nome do cache a cada versão para os aparelhos baixarem os arquivos novos. */
-const CACHE = 'dino-aventura-v0.2.0';
-const ARQUIVOS = ['./', 'index.html', 'style.css', 'jogo.js', 'logo.webp', 'manifest.webmanifest',
+const CACHE = 'dino-aventura-v0.3.0';
+const ARQUIVOS = ['./', 'index.html', 'style.css', 'jogo.js', 'mundo3d.js', 'logo.webp', 'manifest.webmanifest',
   'icons/icon-192.png', 'icons/icon-512.png'];
 
 self.addEventListener('install', e => {

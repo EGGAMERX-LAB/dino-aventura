@@ -1260,7 +1260,7 @@ function desenhaTitulo() {
 }
 
 /* ---------- Telas por cima (título, fases, fim) ---------- */
-function telas(qual) { mostra('titulo', qual === 'titulo'); mostra('fases', qual === 'fases'); mostra('fim', false); mostra('bCasa', qual !== 'titulo'); }
+function telas(qual) { for (const id of ['titulo', 'fases', 'escolhe', 'mundos', 'fimCorrida']) mostra(id, qual === id); mostra('fim', false); mostra('bCasa', qual !== 'titulo'); }
 const FASES = { acorda: vaiAcorda, estrada: vaiEstrada, floresta: vaiFloresta, ceu: vaiCeu, lanche: vaiLanche };
 
 /* ---------- Toques ---------- */
@@ -1271,6 +1271,7 @@ cv.addEventListener('pointerdown', e => {
   else if (S.cena === 'floresta') toqueFloresta(x, y);
   else if (S.cena === 'ceu') { S.dedo = e.pointerId; S.alvoY = y; }
   else if (S.cena === 'lanche') toqueLanche(x, y, e.pointerId);
+  else if (typeof TOQUE3D !== 'undefined' && TOQUE3D[S.cena]) TOQUE3D[S.cena](x, y);
   else if (S.cena === 'titulo') { const [d, sp] = DINOS[sorteio(4)]; rugido(sp === ESP.pesco ? .6 : sp === ESP.tri ? 1.5 : 1.1); d.bocaAlvo = 1; setTimeout(() => d.bocaAlvo = 0, 700); }
 });
 cv.addEventListener('pointermove', e => {

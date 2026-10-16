@@ -39,6 +39,29 @@
   </div>
 </div>
 
+<!-- Aventura 3D: escolher dino e veículo, escolher mundo, fim da corrida -->
+<div id="escolhe" class="cobre">
+  <button id="bAnt" class="seta esq" aria-label="Anterior">◀</button>
+  <button id="bProx" class="seta dir" aria-label="Próximo">▶</button>
+  <div id="veiculos" class="veiculos"></div>
+  <button id="bOk" class="bolao ok" aria-label="Pronto">✔</button>
+</div>
+<div id="mundos" class="cobre">
+  <div class="grade">
+    <button data-mundo="floresta" style="--c1:#8fd16a;--c2:#2f6a24"><b>🌳</b></button>
+    <button data-mundo="deserto" style="--c1:#ffe29a;--c2:#d98a3a"><b>🏜️</b></button>
+    <button data-mundo="vulcao" style="--c1:#ff9a3a;--c2:#5a1a10"><b>🌋</b></button>
+    <button data-mundo="gelo" style="--c1:#ffffff;--c2:#7fb6dc"><b>❄️</b></button>
+  </div>
+</div>
+<div id="fimCorrida" class="cobre">
+  <div class="linha">
+    <button id="bDeNovo3" class="bola" aria-label="De novo">↻</button>
+    <button id="bProxMundo" class="bolao pulsa" aria-label="Próximo mundo">▶</button>
+    <button id="bMundos" class="bola" aria-label="Escolher mundo">🗺️</button>
+  </div>
+</div>
+
 <button id="bCasa" class="casa" aria-label="Início">🏠</button>
 <div id="legenda"></div>
 
@@ -51,5 +74,6 @@
 <div id="gire"><span>📱</span><span class="seta">↻</span></div>
 
 <script src="jogo.js"></script>
+<script src="mundo3d.js"></script>
 </body>
 </html>
